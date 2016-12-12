@@ -1,0 +1,56 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div layout="row" layout-align="center center">
+		<h4>Filter data</h4>
+	</div>
+	<md-content>
+		<md-tabs md-dynamic-height md-border-bottom>
+			<md-tab id="tab1">
+				<md-tab-label>Timeline</md-tab-label>
+				<md-tab-body>
+					<md-datepicker ng-model="vm.minDate" md-placeholder="Enter date"></md-datepicker>
+					<md-datepicker ng-model="vm.maxDate" md-placeholder="Enter date"></md-datepicker>
+					<plotly plotly-data="data1" plotly-layout="layout1" plotly-options="options"></plotly>
+				</md-tab-body>
+			</md-tab>
+			<md-tab id="tab2">
+				<md-tab-label>Categories/Labels</md-tab-label>
+				<md-tab-body>
+						<md-list ng-cloak="">
+							<title>Regions</title>
+							<md-list-item>
+								<md-checkbox aria-label="Select All" ng-checked="vm.isChecked()" md-indeterminate="vm.isIndeterminate()" ng-click="vm.toggleAll()">
+								</md-checkbox>
+								<p><span ng-if="vm.isChecked()">Un-</span>Select All</p>
+							</md-list-item>
+							<md-list-item ng-repeat="region in vm.regions">
+								<md-checkbox ng-checked="vm.exists(region, vm.selected)" ng-click="vm.toggle(region, vm.selected)">
+								</md-checkbox>	<p>{{ region }}</p>
+							</md-list-item>
+						</md-list>
+
+					<!--
+                    Copyright 2016 Google Inc. All Rights Reserved.
+                    Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+                    -->
+
+
+
+					<md-chips ng-model="vm.selectedChemicals" md-autocomplete-snap="" md-transform-chip="vm.transformChip($chip)" md-require-match="vm.autocompleteDemoRequireMatch">
+						<md-autocomplete md-selected-item="vm.selectedItem" md-search-text="vm.searchText" md-items="item in vm.querySearch(vm.searchText)" md-item-text="item.name" placeholder="Type name of chemical">
+							<span md-highlight-text="vm.searchText">{{item.name}} :: {{item.type}}</span>
+						</md-autocomplete>
+						<md-chip-template>
+        <span>
+          <strong>{{$chip.name}}</strong>
+          <em>({{$chip.type}})</em>
+        </span>
+						</md-chip-template>
+					</md-chips>
+
+
+
+				</md-tab-body>
+			</md-tab>
+		</md-tabs>
+	</md-content>
+</md-bottom-sheet>

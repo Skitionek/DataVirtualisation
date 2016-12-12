@@ -1,0 +1,69 @@
+<md-content class="md-padding" layout="column">
+	<md-content layout-xs="column" layout="row">
+		<div flex-xs="" flex-gt-xs="50" layout="column">
+			<md-card md-theme="" md-theme-watch="">
+				<!--         <md-card-title>
+                          <md-card-title-text>
+                            <span class="md-headline">Card with image</span>
+                            <span class="md-subhead">Extra Large</span>
+                          </md-card-title-text>
+                        </md-card-title> -->
+				<md-card-content layout="row" layout-align="space-between">
+					<!--<div class="md-media-xl card-media"></div>-->
+					<plotly plotly-data="data1" plotly-layout="layout" plotly-options="options" plotly-events="plotlyEvents"></plotly>
+					<!--<h2 class="md-title">Content from: plots page</h2>-->
+
+					<!--           <md-card-actions layout="column">
+                                <md-button class="md-icon-button" aria-label="Favorite">
+                                  <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                                </md-button>
+                                <md-button class="md-icon-button" aria-label="Settings">
+                                  <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+                                </md-button>
+                                <md-button class="md-icon-button" aria-label="Share">
+                                  <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                                </md-button>
+                              </md-card-actions> -->
+				</md-card-content>
+			</md-card>
+		</div>
+		<div flex-xs="" flex-gt-xs="50" layout="column">
+			<md-card md-theme="" md-theme-watch="">
+				<md-card-content layout="row" layout-align="space-between">
+					<plotly plotly-data="data2" plotly-layout="layout" plotly-options="options" plotly-events="plotlyEvents"></plotly>
+					<!--<h2 class="md-title">Content from: plots page</h2>-->
+				</md-card-content>
+			</md-card>
+			<!--<md-card md-theme="" md-theme-watch="">-->
+				<!--<md-card-content layout="row" layout-align="space-between">-->
+				<!--<plotly plotly-data="data3" plotly-layout="layout" plotly-options="options"></plotly>-->
+				<!--&lt;!&ndash;<h2 class="md-title">Content from: plots page</h2>&ndash;&gt;-->
+				<!--</md-card-content>-->
+			<!--</md-card>-->
+		<!--</div>-->
+		<!--<div flex-xs="" flex-gt-xs="50" layout="column">-->
+			<!--<md-card md-theme="" md-theme-watch="">-->
+				<!--<md-card-content layout="row" layout-align="space-between">-->
+					<!--<plotly plotly-data="data4" plotly-layout="layout" plotly-options="options"></plotly>-->
+					<!--&lt;!&ndash;<h2 class="md-title">Content from: plots page</h2>&ndash;&gt;-->
+				<!--</md-card-content>-->
+			<!--</md-card>-->
+			<!--<md-card md-theme="" md-theme-watch="">-->
+				<!--<md-card-content layout="row" layout-align="space-between">-->
+					<!--<plotly plotly-data="data5" plotly-layout="layout" plotly-options="options"></plotly>-->
+					<!--&lt;!&ndash;<h2 class="md-title">Content from: plots page</h2>&ndash;&gt;-->
+				<!--</md-card-content>-->
+			<!--</md-card>-->
+			<!--<div ng-click="vm.showFilterBottom($event)" >-->
+				<!--<p>xdfbxfgnbxfghn</p>-->
+			<!--</div>-->
+		</div>
+	</md-content>
+	<md-card md-theme="" md-theme-watch="">
+		<md-card-content layout="row" layout-align="space-between">
+			<div range-slider min="layout.xaxis.rangeslider.range[0]" max="layout.xaxis.rangeslider.range[1]" model-min="layout.xaxis.range[0]" model-max="layout.xaxis.range[1]">
+				<plotly style="height:100px" plotly-data="data3" plotly-layout="timeline_layout" plotly-options="timeline_options" plotly-events="plotlyEvents"></plotly>
+				<!--<h2 class="md-title">Content from: plots page</h2>--></div>
+		</md-card-content>
+	</md-card>
+</md-content>

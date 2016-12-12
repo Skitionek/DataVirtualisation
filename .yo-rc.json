@@ -1,0 +1,28 @@
+{
+  "generator-angm": {
+    "appName": "ang-modular",
+    "angularCookies": true,
+    "angularAnimate": true,
+    "angularSanitize": true,
+    "angularBootstrap": true,
+    "angularMaterial": true,
+    "modules": [
+      {
+        "name": "plots"
+      },
+      {
+        "name": "escher"
+      }
+    ],
+    "menu": [
+      {
+        "link": "plots",
+        "title": "Plots"
+      },
+      {
+        "link": "escher",
+        "title": "Escher"
+      }
+    ]
+  }
+}

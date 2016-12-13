@@ -247,6 +247,26 @@
 			});
 		};
 
+
+
+
+		d3.json('app/modules/escher/e_coli.iJO1366.central_metabolism.json', function(e, data) {
+			d3.text('app/modules/escher/builder-embed-1.3.0.css', function(e, css) {
+				if (e) console.warn(e);
+				var options = {
+					menu: 'all',
+					fill_screen: true,
+					full_screen: false,
+					// not use the d3 transforms for this map
+					use_3d_transform: true,
+					never_ask_before_quit:	true,
+					scroll_behavior: 'none',
+					full_screen_button: true
+				};
+				var b = escher.Builder(data, null, css, d3.select('#map_container'), options);
+			});
+		});
+
 	}
 
 

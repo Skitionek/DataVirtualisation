@@ -8,6 +8,7 @@ module.exports = function (config) {
 
 		// List of files / patterns to load in the browser
 		files: [
+			'src/bower_components/d3/d3.js',
 			'src/bower_components/jquery/dist/jquery.js',
 			'src/bower_components/es5-shim/es5-shim.js',
 			'src/bower_components/json3/lib/json3.min.js',

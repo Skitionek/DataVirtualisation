@@ -43,3 +43,7 @@ plotly {
 md-bottom-sheet {
 	padding-bottom: 16px;
 }
+
+.main-svg {
+	overflow: visible !important;
+}

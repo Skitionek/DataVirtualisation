@@ -1,22 +1,65 @@
 var app = angular.module('plotlyTest', ['plotly']);
 app.controller('controller', function($scope, $timeout) {
-    $scope.data = [{x: [1, 2, 3, 4, 5],
-                    y: [1, 2, 4, 8, 16]}];
-    $scope.layout = {height: 600, width: 1000, title: 'foobar'};
+	$scope.data = [{
+		type: 'scattergeo',
+		// mode: 'markers+text',
+		// text: [
+		// 	'Montreal', 'Toronto', 'Vancouver', 'Calgary', 'Edmonton',
+		// 	'Ottawa', 'Halifax', 'Victoria', 'Winnepeg', 'Regina'
+		// ],
+		// lon: [
+		// 	-73.57, -79.24, -123.06, -114.1, -113.28,
+		// 	-75.43, -63.57, -123.21, -97.13, -104.6
+		// ],
+		// lat: [
+		// 	45.5, 43.4, 49.13, 51.1, 53.34, 45.24,
+		// 	44.64, 48.25, 49.89, 50.45
+		// ],
+		// marker: {
+		// 	size: 7,
+		// 	color: [
+		// 		'#bebada', '#fdb462', '#fb8072', '#d9d9d9', '#bc80bd',
+		// 		'#b3de69', '#8dd3c7', '#80b1d3', '#fccde5', '#ffffb3'
+		// 	],
+		// 	line: {
+		// 		width: 1
+		// 	}
+		// },
+		// name: 'Canadian cities',
+		// textposition: [
+		// 	'top right', 'top left', 'top center', 'bottom right', 'top right',
+		// 	'top left', 'bottom right', 'bottom left', 'top right', 'top right'
+		// ],
+	}];
+
+	$scope.layout = {
+		// title: 'Canadian cities',
+		// font: {
+		// 	family: 'Droid Serif, serif',
+		// 	size: 6
+		// },
+		// titlefont: {
+		// 	size: 16
+		// },
+		geo: {
+			// scope: 'north america',
+			// resolution: 50,
+			// lonaxis: {
+			// 	'range': [-130, -55]
+			// },
+			// lataxis: {
+			// 	'range': [40, 70]
+			// },
+			showrivers: true,
+			rivercolor: '#fff',
+			showlakes: true,
+			lakecolor: '#fff',
+			showland: true,
+			landcolor: '#EAEAAE',
+			countrycolor: '#d3d3d3',
+			countrywidth: 1.5,
+			subunitcolor: '#d3d3d3'
+		}
+	};
     $scope.options = {showLink: false, displayLogo: false};
-    $scope.movePoint = function() {
-        // deep watch will pick up change.
-        $scope.data[0].y[4]++;
-    }
-    $scope.NumberOfSelectedPoints = 0;
-    $scope.plotlyEvents = function (graph){
-      // Create custom events that subscribe to graph
-      graph.on('plotly_selected', function(event){
-        if (event) {
-            $timeout(function() {
-                $scope.NumberOfSelectedPoints = event.points.length;
-            });          
-        }
-      });
-    };
 });

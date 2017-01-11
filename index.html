@@ -16,15 +16,15 @@
 	<!-- injector:css -->
 	<link rel="stylesheet" href="/src/bower_components/angular-material-icons/angular-material-icons.css">
 	<link rel="stylesheet" href="/src/bower_components/angular-material/angular-material.css">
-	<link rel="stylesheet" href="/src/bower_components/angular-rangeslider/angular.rangeSlider.css">
 	<!-- endinjector -->
-	<link rel="stylesheet" href="/app/assets/css/app.css">
 	<!--to be deleted-->
 	<link rel="stylesheet" href="/app/modules/escher/builder-1.3.0.css"></link>
 	<!---->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="/app/assets/css/app.css">
 
 </head>
 <body ng-cloak>
@@ -116,14 +116,12 @@
 </script>
 <!-- End templates -->
 
-<!-- ja.. juz mi się nie chce -->
-<script src="/src/bower_components/d3/d3.js"></script>
-<script src="/src/bower_components/escher/escher-1.3.0.js"></script>
 
 <!-- injector:js -->
-<script src="/src/bower_components/jquery/dist/jquery.js"></script>
 <script src="/src/bower_components/es5-shim/es5-shim.js"></script>
+<script src="/src/bower_components/jquery/dist/jquery.js"></script>
 <script src="/src/bower_components/json3/lib/json3.min.js"></script>
+<script src="/src/bower_components/jsog/lib/JSOG.js"></script>
 <script src="/src/bower_components/angular/angular.js"></script>
 <script src="/src/bower_components/angular-aria/angular-aria.js"></script>
 <script src="/src/bower_components/angular-mocks/angular-mocks.js"></script>
@@ -137,6 +135,7 @@
 <script src="/src/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="/src/bower_components/plotly.js/dist/plotly.min.js"></script>
 <script src="/src/bower_components/angular-plotly/src/angular-plotly.js"></script>
+<script src="/src/bower_components/d3/d3.js"></script>
 <script src="/app/app.js"></script>
 <script src="/app/app.config.js"></script>
 <script src="/app/modules/home/homeModule.js"></script>
@@ -152,12 +151,17 @@
 <script src="/app/modules/layouts/nav-bar/navBarService.js"></script>
 <script src="/app/modules/layouts/side-nav/sidenavService.js"></script>
 <script src="/app/modules/plots/plotsService.js"></script>
-<script src="/src/bower_components/angular-rangeslider/angular.rangeSlider.js"></script>
 <!-- endinjector -->
+
+<!-- ja.. juz mi się nie chce -->
+<script src="/src/bower_components/d3/d3.js"></script>
+<script src="/src/escher/escher-1.3.0.js"></script>
+<script src="/src/angular-rangeslider/angular.rangeSlider.js"></script>
 
 <!-- To be deleted! -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.3.5/simplex/bootstrap.min.css"/>
+<!--<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
 <!---->
 
 </body>

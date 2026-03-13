@@ -12,6 +12,9 @@
     "test": "karma start karma.conf.js",
     "postinstall": "bower install --config.interactive=false"
   },
+  "overrides": {
+    "js-yaml": "^3.13.1"
+  },
   "dependencies": {
     "bower": "~1.8.8",
     "grunt-cli": "~1.4.0",

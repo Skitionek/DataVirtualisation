@@ -1,0 +1,82 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - grunt-cli > liftoff > findup-sync > micromatch > snapdragon > debug:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:debug:20170905'
+        path: grunt-cli > liftoff > findup-sync > micromatch > snapdragon > debug
+    - grunt-cli > liftoff > findup-sync > micromatch > braces > snapdragon > debug:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > braces > snapdragon >
+          debug
+    - grunt-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > debug:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > extglob > snapdragon
+          > debug
+    - grunt-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > debug:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > nanomatch >
+          snapdragon > debug
+    - grunt-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > debug:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > extglob >
+          expand-brackets > debug
+    - grunt-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > extglob >
+          expand-brackets > snapdragon > debug
+  'npm:extend:20180424':
+    - grunt-cli > liftoff > extend:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:extend:20180424'
+        path: grunt-cli > liftoff > extend
+  'npm:ms:20170412':
+    - grunt-cli > liftoff > findup-sync > micromatch > snapdragon > debug > ms:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > snapdragon > debug >
+          ms
+    - grunt-cli > liftoff > findup-sync > micromatch > braces > snapdragon > debug > ms:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > braces > snapdragon >
+          debug > ms
+    - grunt-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > extglob > snapdragon
+          > debug > ms
+    - grunt-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > nanomatch >
+          snapdragon > debug > ms
+    - grunt-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > debug > ms:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > extglob >
+          expand-brackets > debug > ms
+    - grunt-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2026-03-13T22:48:47.345Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          grunt-cli > liftoff > findup-sync > micromatch > extglob >
+          expand-brackets > snapdragon > debug > ms

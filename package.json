@@ -31,7 +31,7 @@
     "grunt-contrib-jshint": "~3.2.0",
     "grunt-contrib-uglify": "~5.2.2",
     "grunt-contrib-watch": "~1.1.0",
-	"grunt-exec": "^0.4.6",
+	"grunt-exec": "^3.0.0",
     "grunt-injector": "^1.1.0",
 	"grunt-angular-templates": "^1.0.2",
     "load-grunt-tasks": "^5.1.0",

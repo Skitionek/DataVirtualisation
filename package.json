@@ -33,7 +33,7 @@
     "grunt-contrib-watch": "~1.1.0",
 	"grunt-exec": "^3.0.0",
     "grunt-injector": "^1.1.0",
-	"grunt-angular-templates": "^1.0.2",
+	"grunt-angular-templates": "^1.2.0",
     "load-grunt-tasks": "^5.1.0",
     "time-grunt": "^0.3.2",
     "karma": "~6.4.4",

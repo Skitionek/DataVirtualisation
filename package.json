@@ -35,7 +35,7 @@
     "grunt-injector": "^1.1.0",
 	"grunt-angular-templates": "^1.2.0",
     "load-grunt-tasks": "^5.1.0",
-    "time-grunt": "^0.3.2",
+    "time-grunt": "^2.0.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",

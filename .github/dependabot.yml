@@ -1,5 +1,10 @@
 # Dependabot configuration
 # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+#
+# `groups` below exist to keep tightly-coupled dependencies in a single PR.
+# Packages in the same group pin each other via peer dependencies or are
+# released in lockstep, so bumping one alone produces a broken build.
+# Add a package to an existing group rather than letting it be bumped solo.
 
 version: 2
 updates:
@@ -22,3 +27,20 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "build"
+    groups:
+      # Every grunt-contrib-*/grunt-* task declares a peerDependency on the
+      # grunt major, and grunt-cli/load-grunt-tasks load them; a solo bump of
+      # grunt leaves the task plugins unresolvable.
+      grunt:
+        patterns:
+          - "grunt"
+          - "grunt-*"
+          - "grunt-cli"
+          - "load-grunt-tasks"
+          - "time-grunt"
+      # Karma launchers, reporters and the jasmine adapter are only
+      # compatible with a matching karma major.
+      karma:
+        patterns:
+          - "karma"
+          - "karma-*"

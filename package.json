@@ -18,7 +18,7 @@
   "dependencies": {
     "bower": "~1.8.8",
     "grunt-cli": "~1.5.0",
-    "glob": "~13.0.6",
+    "glob": "~14.0.3",
     "async": "~3.2.6",
     "chalk": "~6.0"
   },

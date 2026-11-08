@@ -15,10 +15,10 @@ An AngularJS application for interactive data visualisation, built with Angular 
 
 | Layer | Technology |
 |-------|------------|
-| Framework | [AngularJS 1.x](https://angularjs.org/) |
+| Framework | [AngularJS 1.x](https://docs.angularjs.org/) |
 | UI library | [Angular Material](https://material.angularjs.org/) |
-| Charts | [Plotly.js](https://plotly.com/javascript/) + [angular-plotly](https://github.com/alonbardavid/angular-plotly) |
-| Data utilities | [D3.js v3](https://d3js.org/), [JSOG](https://github.com/bhilstrom/jsog) |
+| Charts | [Plotly.js](https://plotly.com/javascript/) + [angular-plotly](https://github.com/alonho/angular-plotly) |
+| Data utilities | [D3.js v3](https://d3js.org/), [JSOG](https://github.com/jsog/jsog) |
 | Routing | [UI-Router](https://ui-router.github.io/ng1/) |
 | Build | [Grunt](https://gruntjs.com/), [Bower](https://bower.io/) |
 | Tests | [Karma](https://karma-runner.github.io/) + [Jasmine](https://jasmine.github.io/) |
@@ -106,7 +106,7 @@ The application loads JSON data from `app/modules/data/`:
 
 | File | Description |
 |------|-------------|
-| `data.jsog.json` | Location/process data encoded in [JSOG](https://github.com/bhilstrom/jsog) format |
+| `data.jsog.json` | Location/process data encoded in [JSOG](https://github.com/jsog/jsog) format |
 | `process_capacity_locations_updated.json` | Process capacity data used for the scatter-geo map |
 | `process_capacity_locations_preformated.json` | Pre-formatted version of the capacity data (matches original filename) |
 | `data.csv` | Raw CSV source |

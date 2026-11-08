@@ -1,4 +1,24 @@
 {
-  "version": "0.2",
-  "words": ["ipynb", "marocchino", "pyx", "sarif", "SARIF", "tfvars"]
+	"version": "0.2",
+	"words": [
+		"devskim",
+		"dustilock",
+		"escher",
+		"geospatial",
+		"ipynb",
+		"jscpd",
+		"jsog",
+		"kingfisher",
+		"marocchino",
+		"npmpackagejsonlintignore",
+		"plotly",
+		"preformated",
+		"pyx",
+		"SARIF",
+		"sarif",
+		"Skitionek",
+		"tfvars",
+		"virtualisation",
+		"visualisation"
+	]
 }

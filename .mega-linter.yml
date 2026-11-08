@@ -1,0 +1,14 @@
+# MegaLinter configuration
+# https://megalinter.io/latest/configuration/
+
+# Third-party code that is committed so that GitHub Pages can serve the app:
+# the Bower packages and the Escher library. It is not ours to lint, and it
+# produced nearly all findings of the scanners that read the whole repository
+# (jscpd, devskim, dustilock, kingfisher). Names are matched at any depth.
+ADDITIONAL_EXCLUDED_DIRECTORIES:
+  - bower_components
+  - escher
+
+# jscpd fails on any duplication by default. The app's own AngularJS services
+# repeat a few short blocks, 3% of the lines at the time of writing.
+COPYPASTE_JSCPD_ARGUMENTS: "--threshold 5"

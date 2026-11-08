@@ -1,0 +1,27 @@
+# MegaLinter configuration
+# https://megalinter.io/latest/configuration/
+
+# Third-party code that is committed so that GitHub Pages can serve the app:
+# the Bower packages (src/bower_components) and the Escher library
+# (app/modules/escher). It is not ours to lint.
+#
+# This setting only removes them from the file lists of the linters that are
+# given files. The scanners below run on the whole repository, so each one
+# gets its own exclude option instead.
+ADDITIONAL_EXCLUDED_DIRECTORIES: [bower_components, escher]
+
+# jscpd fails on any duplication by default. The app's own AngularJS services
+# repeat a few short blocks, 3.8% of the lines at the time of writing.
+COPYPASTE_JSCPD_ARGUMENTS: "--threshold 5 --ignore **/bower_components/**,**/escher/**"
+
+# DevSkim reports a number of issues in the vendored code and none in ours.
+# -g replaces its default globs, so the ones that matter are repeated.
+REPOSITORY_DEVSKIM_ARGUMENTS: "-g **/.git/**,**/bin/**,**/megalinter-reports/**,**/bower_components/**,**/escher/**"
+
+# Kingfisher matched a CircleCI badge token in a vendored README.
+REPOSITORY_KINGFISHER_ARGUMENTS: "--exclude **/bower_components/** --exclude **/escher/**"
+
+# DustiLock has no exclude option. Without --recursive it scans only the
+# repository root, which holds our one package.json; --recursive also reaches
+# a test fixture inside a vendored package.
+REPOSITORY_DUSTILOCK_COMMAND_REMOVE_ARGUMENTS: "--recursive"

@@ -2,6 +2,10 @@
 
 An AngularJS application for interactive data visualisation, built with Angular Material and Plotly.js. It renders geospatial scatter-geo maps of process/capacity data and provides a searchable, filterable chemical/process selector.
 
+[![Exploring the process-capacity map and searching the chemical list](docs/media/data-virtualisation-poster.jpg)](docs/media/data-virtualisation.mp4)
+
+*26-second demo of the live site: hover a site for the processes at that location, zoom and pan the map, then search the chemical list. Click the image to play.*
+
 ## Features
 
 - **Interactive geo maps** – scatter-geo charts rendered via [Plotly.js](https://plotly.com/javascript/) showing process capacity locations across the USA.
